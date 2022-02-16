@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace pooDio.src.Entities
 {
-    internal class Wizard : Hero
+    internal class WhiteWizard : Hero
     {
-        public Wizard(string name, int level, string type) : base(name, level, type)
+        public WhiteWizard(string name, int level, string type) : base(name, level, type)
         {
+            Health = 90;
+            Mana = 150;
         }
 
         public override string Attack(string attack)

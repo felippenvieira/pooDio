@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace pooDio.src.Entities
 {
-    internal class Knight : Hero
+    internal class Ninja : Hero
     {
-        public Knight(string name, int level, string type) : base(name, level, type)
+        public Ninja(string name, int level, string type) : base(name, level, type)
         {
-            Health = 200;
-            Mana = 70;
+            Mana = 200;
         }
     }
 }

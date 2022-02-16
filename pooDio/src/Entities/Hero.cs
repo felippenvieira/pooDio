@@ -5,17 +5,21 @@
         public string Name { get; set; }
         public int Level { get; set; }
         public string Type { get; set; }
+        public int Health { get; set; }
+        public int Mana { get; set; }
 
         public Hero(string name, int level, string type)
         {
             Name = name;
             Level = level;
             Type = type;
+            Health = 100;
+            Mana = 100;
         }
 
         public override string ToString()
         {
-            return "Name: " + Name + ", " + "Level: " + Level + ", " + "Class: " + Type + ".";
+            return "Name: " + Name + ", Level: " + Level + ", Class: " + Type + ", Health: " + Health + ", Mana: " + Mana;
         }
 
         public virtual string Attack(string attack)
