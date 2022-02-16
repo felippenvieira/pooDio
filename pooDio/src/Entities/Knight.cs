@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace pooDio.src.Entities
 {
-    internal class Wizard : Hero
+    internal class Knight : Hero
     {
-        public Wizard(string name, int level, string type) : base(name, level, type)
+        public Knight(string name, int level, string type) : base(name, level, type)
         {
         }
 
         public override string Attack(string attack)
         {
-            return Name + " atacked with her " + attack + ".";
+            return Name + " atacked with his " + attack + ".";
         }
 
         public override string Attack(string attack, int bonus)
         {
-            return Name + " atacked with her super " + attack + " and dealt " + bonus + " bonus damage.";
+            return Name + " atacked with his super " + attack + " and dealt " + bonus + " bonus damage.";
         }
-
     }
 }

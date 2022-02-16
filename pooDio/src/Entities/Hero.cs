@@ -1,6 +1,6 @@
 ﻿namespace pooDio.src.Entities
 {
-    internal class Hero
+    internal abstract class Hero
     {
         public string Name { get; set; }
         public int Level { get; set; }
@@ -21,6 +21,11 @@
         public virtual string Attack(string attack)
         {
             return Name + " atacked with his " + attack + ".";
+        }
+
+        public virtual string Attack(string attack, int bonus)
+        {
+            return Name + " atacked with his super " + attack + " and dealt " + bonus + " bonus damage.";
         }
     }
 }
