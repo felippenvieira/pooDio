@@ -1,12 +1,12 @@
 ﻿namespace pooDio.src.Entities
 {
-    internal class Arus
+    internal class Hero
     {
         public string Name { get; set; }
         public int Level { get; set; }
         public string Type { get; set; }
 
-        public Arus(string name, int level, string type)
+        public Hero(string name, int level, string type)
         {
             Name = name;
             Level = level;
@@ -16,6 +16,11 @@
         public override string ToString()
         {
             return "Name: " + Name + ", " + "Level: " + Level + ", " + "Class: " + Type + ".";
+        }
+
+        public virtual string Attack(string attack)
+        {
+            return Name + " atacked with his " + attack + ".";
         }
     }
 }

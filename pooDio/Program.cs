@@ -1,5 +1,6 @@
 ﻿using pooDio.src.Entities;
 
-Arus hero = new Arus("Arus", 12, "Knight");
+Hero hero = new Hero("Arus", 12, "Knight");
+Wizard wizard = new Wizard("Jenica", 23, "White Wizard");
 
-Console.WriteLine(hero);
+Console.WriteLine(wizard.Attack("magic"));
