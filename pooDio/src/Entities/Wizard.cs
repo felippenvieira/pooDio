@@ -19,7 +19,14 @@ namespace pooDio.src.Entities
 
         public override string Attack(string attack, int bonus)
         {
-            return Name + " atacked with her super " + attack + " and dealt " + bonus + " bonus damage.";
+            if (bonus > 10)
+            {
+                return Name + " atacked with her super effective " + attack + " and dealt " + bonus + " bonus damage.";
+            }
+            else
+            {
+                return Name + " atacked with her weak " + attack + " and dealt " + bonus + " bonus damage.";
+            }
         }
 
     }
